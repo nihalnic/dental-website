@@ -28,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playFair.variable} ${inter.variable} antialiased`}>
         <NavBar />
-        <main className="max-w-[1440px] w-full mx-auto">{children}</main>
+        <main className="max-w-[1440px] w-full mx-auto flex flex-col items-center justify-center h-screen ">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

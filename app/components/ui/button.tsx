@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-green-600 text-primary-600 shadow-xs hover:bg-green-600/90 rounded-3xl ",
+          "bg-green-600 text-primary-600 shadow-xs hover:bg-green-500 rounded-3xl ",
 
         outline:
           "border hover:bg-white-500 hover:text-primary-600 border-white-500 text-white-500 rounded-3xl",
@@ -19,7 +19,7 @@ const buttonVariants = cva(
         //   "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
 
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 rounded-3xl",
+          "hover:bg-accent rounded-3xl",
 
         link: "text-green-600 underline-offset-4 hover:underline",
       },

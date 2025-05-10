@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { navLinks } from "../data";
+import { brandInfo, navLinks } from "../data";
 import { Button } from "./ui/button";
 
 const NavBar = () => {
@@ -26,8 +26,13 @@ const NavBar = () => {
               className=" w-46 object-cover"
             />
           </Link>
-          <h3 className="font-serif p-2 text-xl font-light tracking-wider">
-            (+88) 01310-789148
+          <h3>
+            <a
+              href={brandInfo.phone.link}
+              className="font-serif p-2 text-2xl font-normal text-text-body tracking-wider"
+            >
+              (+88) 01310-789148
+            </a>
           </h3>
         </div>
 
@@ -64,13 +69,13 @@ const NavBar = () => {
 
       {/* Mobile Navbar */}
       <div className=" flex flexBetween lg:hidden w-full">
-        <Link href="/">
+        <Link href="/" onClick={() => setIsMenuOpen(false)}>
           <Image
             src="/assets/images/logos/verticalLogo.svg"
-            width={40}
-            height={40}
+            width={100}
+            height={100}
             alt="Alice Dental Vertical Logo"
-            className="object-contain"
+            className=" md:w-14 w-11 object-contain"
           />
         </Link>
 
@@ -94,14 +99,15 @@ const NavBar = () => {
       {isMenuOpen && (
         <>
           <div className="openMenuOverlay">
-            <div className="flex-between py-4 px-6 ">
-              <Link href="/" className="p-2">
+            <div className="flex flexBetween py-4 px-6 ">
+              <Link href="/">
                 <Image
                   src="/assets/images/logos/verticalLogo.svg"
-                  width={40}
-                  height={40}
+                  width={100}
+                  height={100}
                   alt="Alice Dental Vertical Logo"
-                  className="object-contain"
+                  className="md:w-14 w-11 object-contain"
+                  onClick={() => setIsMenuOpen(false)}
                 />
               </Link>
               <button onClick={() => setIsMenuOpen(false)}>
@@ -109,26 +115,48 @@ const NavBar = () => {
               </button>
             </div>
 
-            <ul className="flex flex-col gap-8 mt-4 py-4 px-6 ">
-              {navLinks.map((link, index) => (
-                <Link
-                  href={link.URL}
-                  key={index}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <li className=" capitalize text-3xl tracking-wide cursor-pointer">
-                    {link.title}
+            <ul className=" flex flex-col md:gap-6 gap-4 px-6 py-4 ">
+              {navLinks.map((link, index) => {
+                const isActive = pathname === link.URL;
+
+                return (
+                  <li
+                    key={index}
+                    className={` capitalize text-text-placeholder text-3xl md:text-4xl font-light py-2 ${
+                      isActive ? "text-white font-medium" : ""
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Link href={link.URL}>{link.title}</Link>
                   </li>
-                </Link>
-              ))}
+                );
+              })}
             </ul>
 
-            <div className="grid grid-cols-2 h-16 border-t border-border">
-              <div className="flex flex-center border-r border-border ">
-                <span>Call</span>
+            <div className=" grid grid-cols-2 h-16 border-t border-border w-full">
+              <div className="flex flexCenter border-r border-border">
+                <span>
+                  <a
+                    href={brandInfo.phone.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" capitalize text-lg font-medium "
+                  >
+                    Call
+                  </a>
+                </span>
               </div>
-              <div className="flex flex-center pl-4">
-                <span>Mail</span>
+              <div className="flex flexCenter pl-4">
+                <span>
+                  <a
+                    href={brandInfo.address.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" capitalize text-lg font-medium "
+                  >
+                    Location
+                  </a>
+                </span>
               </div>
             </div>
           </div>

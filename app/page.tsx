@@ -13,7 +13,7 @@ const page = () => {
   return (
     <>
       <Hero />
-      <div className=" container mx-auto hidden">
+      <div className=" container mx-auto">
         <FeaturedBrand />
         <Services />
         <Clinic />

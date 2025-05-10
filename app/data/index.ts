@@ -196,24 +196,21 @@ export const brandInfo = {
   NAME: "Alice Dental",
   SLOGAN: "Your smile, our passion.",
 
-  CONTACT: [
-    {
-      icon: "/assets/icons/phone.svg",
-      link: "tel:+1234567890",
-      placeholder: "+88 01310-3389148",
-    },
-    {
-      icon: "/assets/icons/mail.svg",
-      link: "mailto:info@alicedental.com",
-      placeholder: "Info@alicedental.com",
-    },
-    {
-      icon: "/assets/icons/location.svg",
-      link: "https://goo.gl/maps/xyz123",
-      placeholder:
-        "RAS Plaza (7th Floor), Ka-11/2, (Bashundhara R/A Road Beside Jamuna Future Park). Dhaka, Bangladesh",
-    },
-  ],
+  email: {
+    placeholder: "info@alicedental.com",
+    link: "mailto:info@alicedental",
+  },
+
+  address: {
+    link: "https://goo.gl/maps/xyz123",
+    placeholder:
+      "RAS Plaza (7th Floor), Ka-11/2, (Bashundhara R/A Road Beside Jamuna Future Park). Dhaka, Bangladesh",
+  },
+
+  phone: {
+    number: "+88013107-89148",
+    link: "tel:+88013107-89148",
+  },
 
   SOCIAL_LINKS: [
     {
