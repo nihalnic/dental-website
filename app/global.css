@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base,components, theme, utilities;
+
+@theme {
+  --color-primary-600: #0f2122;
+  --color-primary-500: #182d2e;
+  --color-border: #1f2e2f;
+  --color-white: #f4f4f4;
+  --color-white-500: #d1d5d6;
+  --color-white-600: #a0a9aa;
+
+  --color-red-500: #ff6b6b;
+
+  --color-green-primary: #3fcf8e;
+  --color-green-500: #7fd6c0;
+  --color-green-600: #4fb8a4;
+
+  --font-playFair: "var(--font-playFair)";
+  --font-inter: "var(--font-inter)";
+}
+
+@theme inline {
+  --color-background: var(--color-primary-600);
+  --color-card-bg: var(--color-primary-500);
+  --color-text-heading: var(--color-white);
+  --color-text-body: var(--color-white-500);
+  --color-text-placeholder: var(--color-white-600);
+
+  --color-link: var(--color-green-primary);
+  --color-link-hover: var(--color-green-500);
+
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-green-primary);
+
+  --font-serif: var(--font-playFair);
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border font-sans;
+  }
+
+  body {
+    @apply bg-background text-text-body w-full h-full;
+  }
+
+  h1 {
+    @apply text-5xl font-semibold text-text-heading font-serif tracking-[-0.02em];
+
+    .subtitle {
+      @apply text-xl font-sans text-white;
+    }
+  }
+
+  h2 {
+    @apply text-4xl font-semibold text-text-heading font-serif tracking-[-0.02em];
+  }
+
+  h3 {
+    @apply text-[32px] font-semibold text-text-heading font-sans tracking-[-0.02em];
+  }
+
+  p {
+    @apply text-base text-text-body font-sans;
+  }
+}
+
+@layer components {
+  .navLinks {
+    @apply uppercase text-text-body p-2 tracking-wider cursor-pointer transition-all duration-300 ease-in-out hover:text-white hover:font-semibold hover:scale-105;
+  }
+
+  .activeNavLink {
+    @apply text-white font-semibold scale-105;
+  }
+
+  .flexCenter {
+    @apply items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply justify-between items-center;
+  }
+}
+
+@layer components {
+  .navBar {
+    @apply py-5 px-6 md:px-14 md:py-7 fixed top-0 left-0 w-full z-50;
+  }
+
+  .openMenuOverlay {
+    @apply fixed inset-0 w-full max-h-screen h-full bg-background z-50 flex flex-col justify-between;
+  }
+
+  .service-card {
+    @apply w-full md:w-[400px] flex flex-col items-start justify-center py-5 px-4 gap-4 h-full rounded-2xl;
+  }
+}

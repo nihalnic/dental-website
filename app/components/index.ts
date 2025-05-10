@@ -1,0 +1,11 @@
+export { default as Clinic } from "./Clinic";
+export { default as Contact } from "./Contact";
+export { default as Cta } from "./Cta";
+export { default as Doctors } from "./Doctors";
+export { default as FeaturedBrand } from "./FeaturedBrand";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as NavBar } from "./NavBar";
+export { default as RealResult } from "./RealResult";
+export { default as Reviews } from "./Reviews";
+export { default as Services } from "./Services";
