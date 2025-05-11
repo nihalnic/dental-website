@@ -72,7 +72,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/nihalnic/dental-website.git
-cd frontend
+cd dental-website
 ```
 
 **Installation**
