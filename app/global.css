@@ -48,11 +48,11 @@
   }
 
   h1 {
-    @apply text-4xl font-semibold text-text-heading font-serif tracking-[-0.25px];
+    @apply text-4xl lg:text-5xl font-semibold text-text-heading font-serif tracking-[-0.25px];
   }
 
   h2 {
-    @apply text-3xl font-semibold text-text-heading font-serif tracking-[-0.25px];
+    @apply text-3xl lg:text-4xl font-semibold text-text-heading font-serif tracking-[-0.25px];
   }
 
   h3 {
@@ -82,7 +82,7 @@
   }
 
   .subtitle {
-    @apply text-base text-center font-medium lg:font-medium lg:text-lg font-sans text-white tracking-normal leading-6;
+    @apply md:text-xl text-center font-sans text-text-body tracking-normal leading-6;
   }
 }
 
@@ -96,6 +96,6 @@
   }
 
   .service-card {
-    @apply w-full md:w-[400px] flex flex-col items-start justify-center py-5 px-4 gap-4 h-full rounded-2xl;
+    @apply w-full flex flex-col items-start md:p-3 h-full;
   }
 }

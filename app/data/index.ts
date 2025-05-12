@@ -10,13 +10,13 @@ export const services = [
   {
     name: "General Dentistry",
     dis: "Routine care to maintain oral health.",
-    image: "/assets/images/orthodontics.png",
+    image: "/assets/images/general.png",
     link: "/",
   },
   {
     name: "Cosmetic Dentistry",
     dis: "Services that improve the appearance of teeth",
-    image: "/assets/images/cosmetic.png ",
+    image: "/assets/images/cosmetic.png",
     link: "/",
   },
   {

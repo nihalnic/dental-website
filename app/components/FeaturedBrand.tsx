@@ -8,7 +8,7 @@ const FeaturedBrand = () => {
         Who Featured Us!
       </h1>
 
-      <div className="grid grid-cols-2 items-center md:flex md:justify-between gap-8 md:gap-5 pt-5">
+      <div className="grid grid-cols-2 items-center md:flex md:justify-between gap-y-5 md:gap-5 pt-5">
         {featuredBrandLogos.map((logo, index) => (
           <picture key={index} className=" flex flexCenter">
             <Image
