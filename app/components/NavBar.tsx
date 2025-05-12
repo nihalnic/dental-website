@@ -134,26 +134,28 @@ const NavBar = () => {
             </ul>
 
             <div className=" grid grid-cols-2 h-16 border-t border-border w-full">
-              <div className="flex flexCenter border-r border-border">
+              <div className=" isolate relative flex flexCenter border-r border-border">
                 <span>
                   <a
                     href={brandInfo.phone.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" capitalize text-lg font-medium "
+                    className=" capitalize text-lg font-medium"
                   >
+                    <span className=" absolute inset-0 z-10"></span>
                     Call
                   </a>
                 </span>
               </div>
-              <div className="flex flexCenter pl-4">
+              <div className="flex flexCenter pl-4 relative isolate ">
                 <span>
                   <a
                     href={brandInfo.address.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" capitalize text-lg font-medium "
+                    className=" capitalize text-lg font-medium"
                   >
+                    <span className=" absolute inset-0 z-10"></span>
                     Location
                   </a>
                 </span>
