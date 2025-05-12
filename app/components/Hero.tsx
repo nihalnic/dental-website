@@ -1,30 +1,46 @@
+// components/Hero.tsx
+"use client";
+
+import Image from "next/image";
 import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className='w-full mt-36 min-h-screen bg-[url("/assets/images/hero-img.png")] bg-cover bg-center bg-no-repeat'>
-      <div className="flex flex-col text-center items-center justify-center px-6 h-full w-full">
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-[85px] mb-4">
-          Reconnect with <br className="lg:hidden" /> your smile.
-        </h1>
-        <p className="subtitle">
-          A new kind of smile-care you’ll actually look forward to.
-          <br className="hidden md:block" /> Book with one of our experts today.
-        </p>
+    <section className="relative w-screen h-screen overflow-hidden">
+      <Image
+        src="/assets/images/hero-img.png"
+        alt="Dental Clinic"
+        fill
+        priority
+        className="object-cover"
+        quality={100}
+      />
+      <div className="relative z-10 flex flexCenter h-full px-4">
+        <div className=" flex flex-col flexCenter text-center mt-15 md:mt-0">
+          <h1 className="text-5xl md:text-[66px] font-bold">
+            Reconnect with <br className="lg:hidden " /> your smile.
+          </h1>
 
-        <div className="flex flex-col md:flex-row flexCenter gap-4 mt-6 w-full max-w-[300px] lg:max-w-[250px]">
-          <Button className=" uppercase tracking-wider cursor-pointer w-full text-base font-normal rounded-4xl">
-            Book Now
-          </Button>
-          <Button
-            variant={"outline"}
-            className=" uppercase tracking-wider cursor-pointer w-full text-base font-normal rounded-4xl"
-          >
-            Free consultation
-          </Button>
+          <p className="mt-4 text-lg md:text-xl">
+            A new kind of smile-care you’ll actually look forward to.
+            <br className="hidden md:block" /> Book with one of our experts
+            today.
+          </p>
+
+          <div className=" mt-8 flex flexCenter flex-col md:flex-row gap-4 w-4/5 md:w-3/5 lg:w-[40%]">
+            <Button className=" cursor-pointer w-full text-base uppercase rounded-4xl flex-2/5">
+              Book Now
+            </Button>
+            <Button
+              variant={"outline"}
+              className=" w-full text-base uppercase rounded-4xl flex-3/5"
+            >
+              Free consultation
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

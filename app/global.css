@@ -48,15 +48,15 @@
   }
 
   h1 {
-    @apply text-5xl font-semibold text-text-heading font-serif tracking-[-0.02em];
+    @apply text-4xl font-semibold text-text-heading font-serif tracking-[-0.25px];
   }
 
   h2 {
-    @apply text-4xl font-semibold text-text-heading font-serif tracking-[-0.02em];
+    @apply text-3xl font-semibold text-text-heading font-serif tracking-[-0.25px];
   }
 
   h3 {
-    @apply text-[32px] font-semibold text-text-heading font-sans tracking-[-0.02em];
+    @apply text-2xl font-semibold text-text-heading font-sans tracking-[-0.25px];
   }
 
   p {
@@ -82,7 +82,7 @@
   }
 
   .subtitle {
-    @apply text-base text-center font-medium lg:font-semibold lg:text-xl font-sans text-text-body tracking-normal leading-6;
+    @apply text-base text-center font-medium lg:font-medium lg:text-lg font-sans text-white tracking-normal leading-6;
   }
 }
 
@@ -92,7 +92,7 @@
   }
 
   .openMenuOverlay {
-    @apply fixed inset-0 w-full max-h-screen h-full bg-background z-50 flex flex-col justify-between;
+    @apply fixed inset-0 w-full max-h-screen h-full bg-background z-50 flex flex-col justify-between overflow-hidden;
   }
 
   .service-card {

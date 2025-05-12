@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Footer, NavBar } from "./components";
 import "./global.css";
+import metadata from "./metadata";
 
 const playFair = Playfair_Display({
   variable: "--font-playFair",
@@ -13,24 +13,20 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Oasis Dental - Your dental Friend.",
-  description:
-    "Oasis is the best dental clinic you ever visit in the town, wee alway try do best for our client, and there are happy with us. ",
-};
+export { metadata };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const fontClass = `${playFair.variable} ${inter.variable} antialiased`;
+
   return (
     <html lang="en">
-      <body className={`${playFair.variable} ${inter.variable} antialiased`}>
+      <body className={fontClass}>
         <NavBar />
-        <main className="max-w-[1440px] w-full mx-auto flex flex-col items-center justify-center h-screen ">
-          {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>

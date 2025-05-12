@@ -229,3 +229,31 @@ export const brandInfo = {
   ],
   LOGO: "assets/images/logos/verticalLogo.svg",
 };
+
+export const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  name: "Alice Oasis Dental",
+  image: "https://aliceoasisdental.com/og-image.jpg",
+  url: "https://aliceoasisdental.com",
+  telephone: "+880-1XXXXXXXXX",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "RAS Plaza (7th Floor), Ka-11/2",
+    addressLocality: "Dhaka",
+    addressRegion: "Dhaka",
+    postalCode: "1212",
+    addressCountry: "BD",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "23.7806",
+    longitude: "90.4074",
+  },
+  openingHours: "Mo-Sa 09:00-19:00",
+  priceRange: "$$",
+  sameAs: [
+    "https://www.facebook.com/aliceoasisdental",
+    "https://www.instagram.com/aliceoasisdental",
+  ],
+};
