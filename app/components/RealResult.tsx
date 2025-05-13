@@ -2,7 +2,9 @@ import React from 'react'
 
 const RealResult = () => {
   return (
-    <div>RealResult</div>
+    <div>
+      
+    </div>
   )
 }
 

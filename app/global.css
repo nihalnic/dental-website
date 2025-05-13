@@ -84,6 +84,18 @@
   .subtitle {
     @apply md:text-xl text-center font-sans text-text-body tracking-normal leading-6;
   }
+
+  .linear_shade {
+    @apply pointer-events-none absolute top-0 h-full w-16 z-10;
+  }
+
+  .linear_shade.left {
+    @apply left-0 bg-gradient-to-r from-primary-600 to-transparent;
+  }
+
+  .linear_shade.right {
+    @apply right-0 bg-gradient-to-l from-primary-600 to-transparent;
+  }
 }
 
 @layer components {
@@ -97,5 +109,9 @@
 
   .service-card {
     @apply w-full flex flex-col items-start md:p-3 h-full;
+  }
+
+  .featured-logo {
+    @apply opacity-50 hover:opacity-100 transition-opacity duration-300 ease-linear cursor-pointer object-contain w-24 md:w-32;
   }
 }
