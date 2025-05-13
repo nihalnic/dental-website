@@ -42,9 +42,11 @@
   * {
     @apply m-0 p-0 box-border font-sans;
   }
-
+  html {
+    @apply overflow-x-hidden;
+  }
   body {
-    @apply bg-background text-text-body w-full h-full;
+    @apply bg-background text-text-body w-full h-full overflow-x-hidden;
   }
 
   h1 {
