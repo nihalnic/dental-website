@@ -96,6 +96,18 @@
   .linear_shade.right {
     @apply right-0 bg-gradient-to-l from-primary-600 to-transparent;
   }
+
+  .arrow_btn {
+    @apply absolute bg-primary-600 py-8 w-10 h-10 flex items-center justify-center;
+  }
+
+  .result-tag {
+    @apply py-[5px] px-4 bg-white-600 uppercase absolute top-2 right-2 rounded-md text-sm font-medium tracking-wider text-primary-600;
+  }
+
+  .result-container {
+    @apply flex items-center justify-center relative border border-white-500 pb-4 md:pb-8 pt-14 md:pt-10 lg:pt-14 rounded-[20px] h-[490px] md:h-[520px];
+  }
 }
 
 @layer components {
