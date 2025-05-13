@@ -48,7 +48,7 @@
   }
 
   h1 {
-    @apply text-4xl lg:text-5xl font-semibold text-text-heading font-serif tracking-[-0.25px];
+    @apply text-4xl uppercase font-semibold text-text-heading font-serif tracking-[-0.25px];
   }
 
   h2 {
@@ -56,7 +56,7 @@
   }
 
   h3 {
-    @apply text-2xl font-semibold text-text-heading font-sans tracking-[-0.25px];
+    @apply text-2xl font-medium text-text-heading font-sans tracking-[-0.25px];
   }
 
   p {
