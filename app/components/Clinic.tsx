@@ -8,7 +8,7 @@ const Clinic = () => {
         <div className="w-full flex flex-col ">
           <div className="text-center md:text-left">
             <h1 className="uppercase mb-5">Clinic View</h1>
-            <p className="subtitle">
+            <p className="md:text-lg font-medium">
               Modern and tailored to your unique needs ensure a comfortable,
               satisfying dental experience.
             </p>

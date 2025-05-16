@@ -12,6 +12,7 @@
   --color-white-600: #a0a9aa;
 
   --color-red-500: #ff6b6b;
+  --color-red-600: #d61f2c;
 
   --color-green-primary: #3fcf8e;
   --color-green-500: #7fd6c0;
@@ -109,6 +110,14 @@
 
   .result-container {
     @apply flex items-center justify-center relative border border-white-500 pb-4 md:pb-8 pt-14 md:pt-10 lg:pt-14 rounded-[20px] h-[490px] md:h-[520px];
+  }
+
+  .doctorCard {
+    @apply flex items-start justify-between gap-2 md:gap-10 w-full h-[356px] md:h-[480px] md:p-8 px-3 py-5 border border-border rounded-lg transition-all duration-300 ease-in-out overflow-hidden;
+  }
+
+  .reviewCard {
+    @apply w-full h-full px-6 py-8 bg-[linear-gradient(to_bottom,_#0F2122_0%,_#121F20_100%)] border border-border rounded-xl;
   }
 }
 

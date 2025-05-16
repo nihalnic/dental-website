@@ -16,7 +16,7 @@ const Hero = () => {
       />
       <div className="relative z-10 flex flexCenter h-full px-4">
         <div className=" flex flex-col flexCenter text-center mt-15 md:mt-0">
-          <h1 className="text-5xl md:text-[66px] font-bold">
+          <h1 className="text-5xl md:text-[66px] font-bold normal-case">
             Reconnect with <br className="lg:hidden " /> your smile.
           </h1>
 

@@ -93,8 +93,18 @@ export const workResult = [
 export const doctors = [
   {
     name: "Alice",
-    surname: "Dr",
-    title: "FOUNDER, CLINICAL CARE LEAD",
+    title: "Dr",
+    position: "FOUNDER, CLINICAL CARE LEAD",
+    servicesTime: "Treated 25,000+ smiles :)",
+    quotes:
+      "I want to alleviate oral pain, prevent tooth loss, and create cavity-free communities.",
+
+    img: "/assets/images/doctor-img.png",
+  },
+  {
+    name: "Imtis",
+    title: "CEO",
+    position: "FOUNDER, CLINICAL CARE LEAD",
     servicesTime: "Treated 25,000+ smiles :)",
     quotes:
       "I want to alleviate oral pain, prevent tooth loss, and create cavity-free communities.",
@@ -132,7 +142,7 @@ export const reviews = [
     surname: "Ahmed",
     serviceName: "Tooth Filling ",
     rating: "5",
-    img: "/assets/images/profile/profile-2.png",
+    img: "/assets/images/profile/profile-3.png",
     date: "17/01/2025",
 
     review:
@@ -143,7 +153,7 @@ export const reviews = [
     surname: "Islam",
     serviceName: "Smile Makeover (Veneers)",
     rating: "4.5",
-    img: "/assets/images/profile/profile-2.png",
+    img: "/assets/images/profile/profile-4.png",
     date: "05/03/2025",
 
     review:
@@ -154,7 +164,7 @@ export const reviews = [
     surname: "Ferdose",
     serviceName: "Wisdom Tooth Extraction",
     rating: "4",
-    img: "/assets/images/profile/profile-2.png",
+    img: "/assets/images/profile/profile-5.png",
     date: "01/02/2025",
 
     review:
@@ -165,7 +175,7 @@ export const reviews = [
     surname: "Reza",
     serviceName: "Pediatric Dental Checkup",
     rating: "5",
-    img: "/assets/images/profile/profile-2.png",
+    img: "/assets/images/profile/profile-6.png",
     date: "26/03/2025",
 
     review:
@@ -198,17 +208,23 @@ export const navLinks = [
 
 export const footerLinks = [
   {
-    title: "USEFUL_LINKS",
+    title: "Useful links",
     links: [
-      { label: "Home", forward: "/" },
       { label: "About", forward: "/about" },
+      { label: "Service", forward: "/service" },
+      { label: "Team", forward: "/team" },
+      { label: "Blogs", forward: "/blogs" },
+      { label: "Contact", forward: "/contact" },
     ],
   },
   {
-    title: "HELPFUL_LINKS",
+    title: "Helpful links",
     links: [
       { label: "Clinics", forward: "/clinics" },
+      { label: "special offers", forward: "/offers" },
       { label: "Careers", forward: "/careers" },
+      { label: "Privacy & policy ", forward: "/legal" },
+      { label: "Terms & Conditions", forward: "/legal" },
     ],
   },
 ];
@@ -216,6 +232,7 @@ export const footerLinks = [
 export const brandInfo = {
   NAME: "Alice Dental",
   SLOGAN: "Your smile, our passion.",
+  DIS: "At the heart of every beautiful smile is care that never compromises.",
 
   email: {
     placeholder: "info@alicedental.com",
@@ -248,8 +265,20 @@ export const brandInfo = {
       link: "https://linkedin.com",
     },
   ],
-  LOGO: "assets/images/logos/verticalLogo.svg",
+
+  LOGO_VER: "assets/images/logos/verticalLogo.svg",
+  LOGO_HOR: "assets/images/logos/horizontalLogo.svg",
 };
+
+export const OPEN_TIMES = [
+  {
+    open: [
+      { days: "Monday - Friday", hours: "9:00 AM - 5:00 PM" },
+      { days: "Saturday", hours: "9:00 AM - 5:00 PM" },
+    ],
+    closed: [{ dasy: "Friday" }],
+  },
+];
 
 export const JSON_LD = {
   "@context": "https://schema.org",
