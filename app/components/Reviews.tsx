@@ -5,7 +5,7 @@ import { reviews } from "../data";
 
 const Reviews = () => {
   return (
-    <section className="my-16">
+    <section className="my-20">
       <div className="flex flex-col md:flex-row items-center justify-between mb-14 w-full">
         <div className=" text-center md:text-left w-full mb-8 md:mb-0">
           <h1>REVIEWS</h1>
@@ -15,7 +15,7 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div className="flex items-center md:justify-end md:mr-10 justify-between gap-10 w-full">
+        <div className="flex items-center md:justify-end md:mr-10 px-5 md:px-0 justify-between gap-10 w-full">
           <Link href="">
             <Image
               src="/assets/images/logos/google_review.svg"

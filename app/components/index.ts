@@ -1,5 +1,4 @@
 export { default as Clinic } from "./Clinic";
-export { default as Contact } from "./Contact";
 export { default as Cta } from "./Cta";
 export { default as Doctors } from "./Doctors";
 export { default as FeaturedBrand } from "./FeaturedBrand";

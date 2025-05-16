@@ -77,7 +77,7 @@ const RealResult = () => {
   }, [visibleCount]);
 
   return (
-    <section className="my-15">
+    <section className="my-20">
       <div className="result-container " ref={containerRef}>
         <button className="arrow_btn left-[-25] cursor-pointer" onClick={prev}>
           <Image

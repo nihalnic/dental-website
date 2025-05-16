@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Clinic = () => {
   return (
-    <section className=" mt-20">
+    <section className="my-20">
       <div className="flex flex-col md:flex-row w-full h-full gap-10">
         <div className="w-full flex flex-col ">
           <div className="text-center md:text-left">

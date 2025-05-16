@@ -57,15 +57,15 @@ export const workResult = [
     title: "Name",
     time: "60-Min Cleaning & Whitening",
     type: "6+ Shade  Jump",
-    beforeImg: "/assets/images/before-img.png",
-    afterImg: "/assets/images/after-img.png",
+    beforeImg: "/assets/images/befor-img_1.png",
+    afterImg: "/assets/images/after-img_1.png",
   },
   {
     title: "Name",
     time: "60-Min Cleaning & Whitening",
     type: "5+ Shade  Jump",
-    beforeImg: "/assets/images/before-img.png",
-    afterImg: "/assets/images/after-img.png",
+    beforeImg: "/assets/images/before-img_2.png",
+    afterImg: "/assets/images/after-img_2.png",
   },
   {
     title: "Name",
@@ -93,7 +93,7 @@ export const workResult = [
 export const doctors = [
   {
     name: "Alice",
-    title: "Dr",
+    title: "Dr.",
     position: "FOUNDER, CLINICAL CARE LEAD",
     servicesTime: "Treated 25,000+ smiles :)",
     quotes:
@@ -102,14 +102,14 @@ export const doctors = [
     img: "/assets/images/doctor-img.png",
   },
   {
-    name: "Imtis",
-    title: "CEO",
-    position: "FOUNDER, CLINICAL CARE LEAD",
-    servicesTime: "Treated 25,000+ smiles :)",
+    name: "Emmeline",
+    title: "",
+    position: "Hygienist",
+    servicesTime: "Treated 13,000+ smiles :)",
     quotes:
-      "I want to alleviate oral pain, prevent tooth loss, and create cavity-free communities.",
+      "I love working with people to achieve their healthy smile makeovers! I want everyone to know that we can absolutely do better than 'grin-and-bear-it' dentistry.",
 
-    img: "/assets/images/doctor-img.png",
+    img: "/assets/images/doctor_two.png",
   },
 ];
 
@@ -252,18 +252,15 @@ export const brandInfo = {
 
   SOCIAL_LINKS: [
     {
-      icon: "/assets/icons/fb.svg",
-      link: "https://facebook.com",
-    },
-    {
       icon: "/assets/icons/insta.svg",
       link: "https://instagram.com",
     },
-    { icon: "/assets/icons/fb.svg", link: "https://twitter.com" },
+    { icon: "/assets/icons/x.svg", link: "https://twitter.com" },
     {
       icon: "/assets/icons/fb.svg",
-      link: "https://linkedin.com",
+      link: "https://facebook.com",
     },
+    { icon: "/assets/icons/yt.svg", link: "https://youtube.com" },
   ],
 
   LOGO_VER: "assets/images/logos/verticalLogo.svg",
@@ -276,7 +273,7 @@ export const OPEN_TIMES = [
       { days: "Monday - Friday", hours: "9:00 AM - 5:00 PM" },
       { days: "Saturday", hours: "9:00 AM - 5:00 PM" },
     ],
-    closed: [{ dasy: "Friday" }],
+    closed: [{ dasy: "Sunday" }],
   },
 ];
 

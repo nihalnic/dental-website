@@ -24,7 +24,7 @@ const Doctors = () => {
   };
 
   return (
-    <section className="my-15">
+    <section className="my-20">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10 md:gap-5 w-full h-full">
         <div className="w-full mt-5">
           <Image
@@ -70,9 +70,9 @@ const Doctors = () => {
                 <div className="flex flex-col justify-between w-full h-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl font-sans font-light capitalize mb-4">
-                      <span>{doctor.title}.</span> {doctor.name}
+                      <span>{doctor.title}</span> {doctor.name}
                     </h1>
-                    <p className="text-xs md:text-sm font-medium tracking-[2px]">
+                    <p className="text-xs uppercase md:text-sm font-medium tracking-[2px]">
                       {doctor.position}
                     </p>
                     <p className="text-xs md:text-base font-serif italic tracking-wide mt-8">
@@ -83,7 +83,7 @@ const Doctors = () => {
                     <h3 className="text-sm md:text-base text-red-500 font-semibold tracking-[1px] uppercase mb-3">
                       What I Believe In
                     </h3>
-                    <p className="text-xs md:text-base">{doctor.quotes}</p>
+                    <p className="text-xs md:text-base max-w-[600px]">{doctor.quotes}</p>
                     <div className="absolute bottom-0 right-0 md:bottom-[-5px] md:right-[-10px] z-[-10]">
                       <Image
                         src="/assets/icons/quotes.svg"

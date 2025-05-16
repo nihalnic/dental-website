@@ -6,7 +6,7 @@ import { services } from "../data";
 
 const Services = () => {
   return (
-    <section className=" mt-20 text-center">
+    <section className="my-20 text-center">
       <h1 className=" mb-5">Services</h1>
       <p className=" subtitle max-w-[600px] mx-auto ">
         High quality dental for you and your family. Our expert team provide a
