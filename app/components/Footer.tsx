@@ -137,9 +137,11 @@ const Footer = () => {
           ©-2025 Alice Dental. All rights reserved.
         </p>
 
-        <p className="font-light">
-          Powered by <span className="md:font-medium">Nihal Nic</span>
-        </p>
+        <Link href="https://nihals.com">
+          <p className="font-light">
+            Powered by <span className="md:font-medium">Nihal Nic</span>
+          </p>
+        </Link>
       </div>
     </footer>
   );
