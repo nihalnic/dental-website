@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 const Cta = () => {
   return (
     <section className="my-20">
-      <div className="bg-red-600 rounded-lg max-w-[1200px] mx-auto lg:min-h-[400px]  md:min-h-[334px] h-full px-4 py-7 md:px-0 md:py-0 text-center flex items-center flex-col justify-center">
+      <div className="bg-red-600 rounded-lg max-w-[1200px] mx-auto lg:min-h-[400px]  md:min-h-[334px] h-full px-4 py-7 md:px-0 md:py-0 text-center flex items-center flex-col justify-center hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
         <h1 className=" normal-case font-sans text-[26px] leading-8 md:leading-10 md:text-4xl font-semibold mb-4">
           Premium Dental <span className=" hidden md:inline">Treatment</span>{" "}
           <span className="md:hidden">Care</span> <br /> at Affordable Prices

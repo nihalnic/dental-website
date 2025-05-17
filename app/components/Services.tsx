@@ -27,12 +27,12 @@ const Services = () => {
             </div>
 
             <div className=" mt-3 text-left">
-              <h3 className="text-2xl font-medium tracking-tight mb-2">
-                <Link href={service.link}>
+              <Link href={service.link}>
+                <h3 className="text-2xl font-medium tracking-tight mb-2">
                   <span className=" absolute inset-0 z-10"></span>
                   {service.name}
-                </Link>
-              </h3>
+                </h3>
+              </Link>
 
               <p>{service.dis}</p>
 

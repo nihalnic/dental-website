@@ -119,7 +119,7 @@ export const reviews = [
     surname: "Rahman",
     serviceName: "Root Canal ",
     rating: "4.5",
-    img: "/assets/images/profile/profile-1.png",
+    img: "/assets/images/profile/profile.png",
     date: "22/03/2025",
 
     review:
@@ -131,7 +131,7 @@ export const reviews = [
     surname: "Hasan",
     serviceName: "Dental Cleaning & Checkup ",
     rating: "5",
-    img: "/assets/images/profile/profile-2.png",
+    img: "/assets/images/profile/profile-3.png",
     date: "10/02/2025",
 
     review:
@@ -142,7 +142,7 @@ export const reviews = [
     surname: "Ahmed",
     serviceName: "Tooth Filling ",
     rating: "5",
-    img: "/assets/images/profile/profile-3.png",
+    img: "/assets/images/profile/profile-2.png",
     date: "17/01/2025",
 
     review:
@@ -153,7 +153,7 @@ export const reviews = [
     surname: "Islam",
     serviceName: "Smile Makeover (Veneers)",
     rating: "4.5",
-    img: "/assets/images/profile/profile-4.png",
+    img: "/assets/images/profile/profile-3.png",
     date: "05/03/2025",
 
     review:
@@ -164,7 +164,7 @@ export const reviews = [
     surname: "Ferdose",
     serviceName: "Wisdom Tooth Extraction",
     rating: "4",
-    img: "/assets/images/profile/profile-5.png",
+    img: "/assets/images/profile/profile-4.png",
     date: "01/02/2025",
 
     review:
@@ -175,7 +175,7 @@ export const reviews = [
     surname: "Reza",
     serviceName: "Pediatric Dental Checkup",
     rating: "5",
-    img: "/assets/images/profile/profile-6.png",
+    img: "/assets/images/profile/profile-5.png",
     date: "26/03/2025",
 
     review:

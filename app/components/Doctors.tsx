@@ -83,7 +83,7 @@ const Doctors = () => {
                     <h3 className="text-sm md:text-base text-red-500 font-semibold tracking-[1px] uppercase mb-3">
                       What I Believe In
                     </h3>
-                    <p className="text-xs md:text-base max-w-[600px]">{doctor.quotes}</p>
+                    <p className="text-xs md:text-base w-full max-w-[600px]">{doctor.quotes}</p>
                     <div className="absolute bottom-0 right-0 md:bottom-[-5px] md:right-[-10px] z-[-10]">
                       <Image
                         src="/assets/icons/quotes.svg"

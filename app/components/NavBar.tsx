@@ -29,7 +29,7 @@ const NavBar = () => {
           <h3>
             <a
               href={brandInfo.phone.link}
-              className="font-serif p-2 text-2xl font-normal text-text-body tracking-wider"
+              className="font-serif p-2 text-2xl font-normal text-text-body tracking-wider hover:text-white transition duration-200 ease-linear"
             >
               (+88) 01310-789148
             </a>
