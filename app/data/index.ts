@@ -235,8 +235,8 @@ export const brandInfo = {
   DIS: "At the heart of every beautiful smile is care that never compromises.",
 
   email: {
-    placeholder: "info@alicedental.com",
-    link: "mailto:info@alicedental",
+    placeholder: "alicedentaloasis@gmail.com",
+    link: "mailto:alicedentaloasis@gmail.com",
   },
 
   address: {
@@ -246,8 +246,8 @@ export const brandInfo = {
   },
 
   phone: {
-    number: "+88013107-89148",
-    link: "tel:+88013107-89148",
+    number: "+88 013267-10128",
+    link: "tel:+01326710128",
   },
 
   SOCIAL_LINKS: [
@@ -258,7 +258,7 @@ export const brandInfo = {
     { icon: "/assets/icons/x.svg", link: "https://twitter.com" },
     {
       icon: "/assets/icons/fb.svg",
-      link: "https://facebook.com",
+      link: "https://www.facebook.com/@alicedentaloasiss/",
     },
     { icon: "/assets/icons/yt.svg", link: "https://youtube.com" },
   ],

@@ -104,7 +104,7 @@ const RealResult = () => {
 
         <div className="absolute top-[-40] md:top-[-28] bg-primary-600 px-5">
           <h1 className=" text-center font-sans font-normal capitalize tracking-tight lg:text-5xl">
-            Real People. <br className="md:hidden" /> Real Reasults.
+            Real People. <br className="md:hidden" /> Real Results.
           </h1>
         </div>
 
